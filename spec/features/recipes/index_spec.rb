@@ -7,6 +7,11 @@ RSpec.describe 'recipes index page' do
     hamburger = Recipe.create!(name: "Hamburger", complexity: 2, genre: "American")
     spaghetti = Recipe.create!(name: "Spaghetti", complexity: 3, genre: "Italian")
 
+    cheese = Ingredient.create!(name: "American Cheese", cost: 4)
+    bread = Ingredient.create!(name: "Bread", cost: 3)
+    butter = Ingredient.create!(name: "Butter", cost: 2)
+    meat = Ingredient.create!(name: "Meat", cost: 7)
+
      visit '/recipes'
 
      within "#recipes-#{grilled_cheese.id}" do 

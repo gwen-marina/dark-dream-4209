@@ -1,14 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'recipes show page' do 
-
-# User Story 2 of 4
-# As a visitor,
-# When I visit '/recipes/:id'
-# I see a list of the names of the ingredients the recipe has.
-# (e.g. "Pasta, Meat, Cheese")
-# spaghetti = Recipe.create!(name: "Spaghetti", complexity: 3, genre: "Italian")
-
+  
   it 'can list all the names of an ingredient a recipe has' do 
     grilled_cheese = Recipe.create!(name: "Grilled Cheese", complexity: 1, genre: "American")
     hamburger = Recipe.create!(name: "Hamburger", complexity: 2, genre: "American")
